@@ -8,11 +8,11 @@
     <title>IJ_Motors</title>
 </head>
 <body>
-    
+    <header>
       <!-- NAVBAR -->
       <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand">Navbar</a>
+          <a class="navbar-brand"><img src="./img/IJ.png" style="width: 80px;" alt=""></a>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
@@ -21,7 +21,7 @@
       </nav>
 <!-- PAGE D'ACCEUIL -->
 
-<ul class="nav justify-content-center">
+<ul class="nav bg-body-tertiary justify-content-center">
     <li class="nav-item">
       <a class="nav-link active" aria-current="page" href="#">Active</a>
     </li>
@@ -32,9 +32,108 @@
       <a class="nav-link" href="#">Piece</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+      <a class="nav-link" href="#">About us</a>
     </li>
   </ul>
 
+  
+<!-- CAROUSEL ACCEUIL -->
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/cars/automobile-5330343_1280.jpg" class="d-block w-100" alt="De belles voitures">
+      </div>
+      <div class="carousel-item">
+        <img src="img/cars/mclaren-4223024_1280.jpg" class="d-block w-100" alt="Des prix incroyables">
+      </div>
+      <div class="carousel-item">
+        <img src="img/cars/lamborghini-2137815_1280.jpg" class="d-block w-100" alt="Votre prochain bolide">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<!-- FIN ACCEUIL -->
+
+</header>
+
+<div class="products">
+     <!-- Produit card-->
+
+  <h4>Nous avons une large gamme de produit </h4><br><Br>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/cars/auto-788747_1280.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cadillac</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/cars/lamborghini-2137815_1280.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lamborghini</h5>
+                    <p class="card-text">This is a short card.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/cars/automobile-5330343_1280.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Porshe</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/cars/mclaren-4223024_1280.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/cars/automobile-5330343_1280.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/cars/lamborghini-2137815_1280.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+ 
+  <!-- POP UP -->
+  
 </body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>
