@@ -162,7 +162,9 @@ if (isset($_POST['sign'])) {
                     </div>
                 </div>
 
-                <div class="line"></div>
+                <div class="line">
+					
+				</div>
 
             </div>
 		</div>
