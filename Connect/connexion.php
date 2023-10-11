@@ -2,7 +2,7 @@
 session_start();
 require("PDO.php");
 
-if (isset($_POST['bout'])) {
+if (isset($_POST['bout']) && empty($_POST['sign'])) {
     $pseudo = $_POST["email"];
     $pass = $_POST["pass"];
    
@@ -113,14 +113,14 @@ if (isset($_POST['bout'])) {
 			</div>
 		</div>
 <?php  
-if (isset($_POST['sign'])) {
+if (isset($_POST['sign']) && empty($_POST['bout'])) {
     $nom = $_POST["name"];
     $email = $_POST["email2"];
     $pass1 = $_POST["password2"];
     $pass2 = $_POST["password3"];
     if($pass1 == $pass2){
 
-       $sql = "INSERT INTO `connexion`(`username`, `mdp`, `mail`) VALUES (':name', ':pass', ':email')";
+       $sql = "INSERT INTO `connexion`(`username`, `mdp`, `mail`) VALUES (:name, :pass, :email)";
         $stmt = $db->prepare($sql);
 		$stmt->bindParam(':name',$nom);
 		$stmt->bindParam(':pass',$pass1);
@@ -136,18 +136,18 @@ if (isset($_POST['sign'])) {
                     <header class="login100-form-title">Signup</header><br><br>
                     <form action="" method="post">
                        
-                    <div class="wrap-input100 validate-input">
+                    <div class="wrap-input100 ">
                             <input class="input100" type="text" name="name" placeholder="Name" class="input100">
                         </div>
-                        <div class="wrap-input100 validate-input">
+                        <div class="wrap-input100 ">
                             <input class="input100" type="email" name="email2" data-validate = "Valid email is required: ex@abc.xyz" placeholder="Email" class="input">
                         </div>
 
-                        <div class="wrap-input100 validate-input">
+                        <div class="wrap-input100 ">
                             <input type="password" name="password2"  placeholder="Create password" class="input100">
                         </div>
 
-                        <div class="wrap-input100 validate-input">
+                        <div class="wrap-input100 ">
                             <input type="password" name="password3" placeholder="Confirm password" class="input100">
                             <i class='bx bx-hide eye-icon'></i>
                         </div>
