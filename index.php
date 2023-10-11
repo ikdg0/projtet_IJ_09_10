@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
     <title>IJ_Motors</title>
     <script>
       // On page load or when changing themes, best to add inline in `head` to avoid FOUC
@@ -84,9 +92,10 @@
             <div class="card h-100">
                 <img src="img/cars/auto-788747_1280.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Cadillac</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title">Cadillac 1990</h5>
+                    <p class="card-text">Marque: <strong>Caillac</strong></p><br>
+                    <p class="card-text">Prix: <strong style="color: blue;">1000000.00€</strong></p><br>
+                    <p class="card-text">Couleur: <strong style="color: wheat;">Creme</strong></p>
                 </div>
             </div>
         </div>
@@ -94,8 +103,10 @@
             <div class="card h-100">
                 <img src="img/cars/lamborghini-2137815_1280.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Lamborghini</h5>
-                    <p class="card-text">This is a short card.</p>
+                    <h5 class="card-title">Lamborghini Huracan</h5>
+                    <p class="card-text">Marque: <strong>Lamborghini</strong></p><br>
+                    <p class="card-text">Prix: <strong style="color: blue;">200000.00€</strong></p><br>
+                    <p class="card-text">Couleur: <strong style="color: orange;">Orange</strong></p>
                 </div>
             </div>
         </div>
@@ -103,9 +114,10 @@
             <div class="card h-100">
                 <img src="img/cars/automobile-5330343_1280.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Porsche</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content.</p>
+                    <h5 class="card-title">Porsche 911 turbo S</h5>
+                    <p class="card-text">Marque: <strong>Porsche</strong></p><br>
+                    <p class="card-text">Prix: <strong style="color: blue;">100000.00€</strong></p><br>
+                    <p class="card-text">Couleur: <strong style="color: darkslategray;">Charbon</strong></p>
                 </div>
             </div>
         </div>
@@ -114,8 +126,9 @@
                 <img src="img/cars/mclaren-4223024_1280.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Mclaren P1</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Marque: <strong>McLaren</strong></p><br>
+                    <p class="card-text">Prix: <strong style="color: blue;">100000.00€</strong></p><br>
+                    <p class="card-text">Couleur: <strong style="color: orange;">Orange</strong></p>
                 </div>
             </div>
         </div>
@@ -125,17 +138,52 @@
                 <div class="card-body">
                     <h5 class="card-title">911 Turbo</h5>
                     <p class="card-text">Marque: <strong>Porsche</strong></p><br>
+                    <p class="card-text">Prix: <strong style="color: blue;">100000.00€</strong></p><br>
                     <p class="card-text">Couleur: <strong style="color: gray;">Gris Métalisé</strong></p>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card h-100">
-                <img src="img/cars/lamborghini-2137815_1280.jpg" class="card-img-top" alt="...">
+                <img src="img/cars/bugatti-la-voiture-noire.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Lamborghini Huracan</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title">La voiture noire</h5>
+                    <p class="card-text">Marque: <strong>Bugatti</strong></p><br>
+                    <p class="card-text">Prix: <strong style="color: blue;">10000000.00€</strong></p><br>
+                    <p class="card-text">Couleur: <strong style="color: black;">Noire</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/cars/ford-mustang-gt.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ford Mustang GT V12</h5>
+                    <p class="card-text">Marque: <strong>Ford</strong></p><br>
+                    <p class="card-text">Prix: <strong style="color: blue;">122000.00€</strong></p><br>
+                    <p class="card-text">Couleur: <strong style="color: gray;">Gris custom ligne rouge</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/cars/Mercedes-classe-a.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Mercedes Classe A</h5>
+                    <p class="card-text">Marque: <strong>Mercedes Benz</strong></p><br>
+                    <p class="card-text">Prix: <strong style="color: blue;">30000.00€</strong></p><br>
+                    <p class="card-text">Couleur: <strong style="color: red;">Rouge</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="img/cars/Lamborghini_Huracan_evo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lamborghini Huracan EVO</h5>
+                    <p class="card-text">Marque: <strong>Lamborghini</strong></p><br>
+                    <p class="card-text">Prix: <strong style="color: blue;">150000.00€</strong></p><br>
+                    <p class="card-text">Couleur: rouge <strong style="color: orangered;">Rouge Orangé</strong></p>
                 </div>
             </div>
         </div>
@@ -144,7 +192,7 @@
 </div>
 
 <!-- FOOTER -->
-
+<!-- 
 <footer class="bg-white dark:bg-gray-900">
   <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
       <div class="md:flex md:justify-between">
@@ -228,6 +276,70 @@
     </div>
   </div>
 </footer>
+ -->
+
+
+
+<!-- **************************footer 2******************************************** -->
+<footer class="footer-59391">
+    <div class="border-bottom pb-5 mb-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3">
+            <form action="#" class="subscribe mb-4 mb-lg-0">
+              <div class="form-group">
+              <input type="email" class="form-control" placeholder="Enter your email">
+              <button><span class="icon-keyboard_backspace"></span></button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6 text-lg-center">
+            <ul class="list-unstyled nav-links nav-left mb-4 mb-lg-0">
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <ul class="list-unstyled nav-links social nav-right text-lg-right">
+              <li><a href="#"><span class="icon-twitter"></span></a></li>
+              <li><a href="#"><span class="icon-instagram"></span></a></li>
+              <li><a href="#"><span class="icon-facebook"></span></a></li>
+              <li><a href="#"><span class="icon-pinterest"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-4 text-lg-center site-logo order-1 order-lg-2 mb-3 mb-lg-0">
+          <a href="#" class="m-0 p-0">IJ MOTORS</a>
+        </div>
+        <div class="col-lg-4 order-2 order-lg-1 mb-3 mb-lg-0">
+          <ul class="list-unstyled nav-links m-0 nav-left">
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-4 text-lg-right order-3 order-lg-3">
+          <p class="m-0 text-muted"><small>&copy; 2023. All Rights Reserved.</small></p>
+        </div>
+      </div>
+    </div>
+
+</footer>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- **************************footer 2******END************************************** -->
+
 
 
 <!-- FOOTER END -->
