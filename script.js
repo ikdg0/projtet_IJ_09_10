@@ -5,3 +5,74 @@
         localStorage.setItem('cookiesAccepted', true);
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Code à exécuter une fois que le document est prêt
+
+  // Récupérez l'élément d'entrée de recherche
+  const searchInput = document.getElementById("searchInput");
+
+  // Récupérez toutes les cartes de produits
+  const productCards = document.querySelectorAll(".card");
+
+  // Ajoutez un gestionnaire d'événement "keyup" à l'élément de recherche
+  searchInput.addEventListener("keyup", function () {
+      // Récupérez la valeur saisie dans le champ de recherche, en mettant en minuscules
+      const searchTerm = searchInput.value.toLowerCase();
+
+      // Parcourez toutes les cartes de produits
+      productCards.forEach(card => {
+          const cardTitle = card.querySelector(".card-title").textContent.toLowerCase();
+          const cardText = card.querySelector(".card-text").textContent.toLowerCase();
+
+          // Vérifiez si le terme de recherche est présent dans le titre ou le texte de la carte
+          if (cardTitle.includes(searchTerm) || cardText.includes(searchTerm)) {
+              card.style.display = "block"; // Affiche la carte
+          } else {
+              card.style.display = "none"; // Cache la carte
+          }
+      });
+  });
+});
+
+
+var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+// Change the icons inside the button based on previous settings
+if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    themeToggleLightIcon.classList.remove('hidden');
+} else {
+    themeToggleDarkIcon.classList.remove('hidden');
+}
+
+var themeToggleBtn = document.getElementById('theme-toggle');
+
+themeToggleBtn.addEventListener('click', function() {
+
+    // toggle icons inside button
+    themeToggleDarkIcon.classList.toggle('hidden');
+    themeToggleLightIcon.classList.toggle('hidden');
+
+    // if set via local storage previously
+    if (localStorage.getItem('color-theme')) {
+        if (localStorage.getItem('color-theme') === 'light') {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('color-theme', 'dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('color-theme', 'light');
+        }
+
+    // if NOT set via local storage previously
+    } else {
+        if (document.documentElement.classList.contains('dark')) {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('color-theme', 'light');
+        } else {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('color-theme', 'dark');
+        }
+    }
+    
+});
