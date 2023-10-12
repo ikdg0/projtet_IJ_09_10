@@ -117,3 +117,47 @@ h4 {
     transform: translate(-50%, -50%)
   }
 
+/* Dark mode */
+.btn-toggle {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: #333;
+	color: #fff;
+	border: 1px solid #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+body.dark {
+	color: #fff !important;
+	background: #333 !important;
+}
+
+body.dark .btn-toggle {
+	background: #f1f1f1;
+	color: rgb(66, 66, 66);
+}
+
+footer {
+	margin-top: 50px;
+
+}
+
+footer.dark {
+	color: #fff !important;
+	background: #333 !important;
+}
+
+footer.dark .btn-toggle {
+	background: #f1f1f1;
+	color: rgb(66, 66, 66);
+}
+
+
+/*Fin dark mode*/
