@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+
+.popup{
+	background-color: #fff;
+	box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	padding: 20px 30px;
+	text-align: center;
+	max-width: 500px;
+}
+
+.popup p {
+	color: #555;
+}
+
+.click-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.click {
+	background-color: #3498db;
+	border: 0;
+	border-radius: 5px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+	padding: 15px 30px;
+	position: relative;
+	margin: 10px;
+}
+
+.click:active {
+	box-shadow: none;
+	transform: scale(0.98);
+}
+
+.click:focus {
+	outline: none;
+}
+
+.click.ghost {
+	background-color: #fff;
+	color: #3498db;
+	box-shadow: none;
+}
+
+.click.ghost span {
+	background-color: #3498db;
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 10px;
+	padding: 3px 7px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	transform: rotate(10deg);
+}
+
+.popup img {
+	width: 70px;
+}
+
+body {
+    font-family: 'NomDeLaPolice', sans-serif;
+}
+
+h1,
+h2,
+h4 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.g-col-6 {
+    background-color: black;
+}
+
+.card {
+
+    margin: 5;
+    display: flex;
+    margin: 20px;
+    ;
+}
+
+/*#product {
+    display: inline;
+}*/
+
+
+.modal {
+    display: none;
+  }
+  .modal-back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba( 0, 0, 0, .25 )
+  }
+  .modal-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 25px;
+    background: white;
+    transform: translate(-50%, -50%)
+  }
+
+/* Dark mode */
+.btn-toggle {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: #333;
+	color: #fff;
+	border: 1px solid #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+body.dark {
+	color: #fff !important;
+	background: #333 !important;
+}
+
+body.dark .btn-toggle {
+	background: #f1f1f1;
+	color: rgb(66, 66, 66);
+}
+
+footer {
+	margin-top: 50px;
+
+}
+
+footer.dark {
+	color: #fff !important;
+	background: #333 !important;
+}
+
+footer.dark .btn-toggle {
+	background: #f1f1f1;
+	color: rgb(66, 66, 66);
+}
+
+
+/*Fin dark mode*/
