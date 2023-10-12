@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- Style CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>IJ_Motors</title>
     <script>
       // On page load or when changing themes, best to add inline in `head` to avoid FOUC
@@ -29,7 +29,7 @@
       <!-- NAVBAR -->
       <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand"><img src="./img/IJ.png" style="width: 80px;" alt=""></a>
+          <a class="navbar-brand"><img src="../img/IJ.png" style="width: 80px;" alt=""></a>
           <form class="d-flex" role="search">
             <input id="searchInput" class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
             <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
@@ -43,13 +43,13 @@
 
 <ul class="nav bg-body-tertiary justify-content-center">
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">Active</a>
+      <a class="nav-link active" aria-current="page" href="index.php">Acceuil</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Cars</a>
+      <a class="nav-link" href="cars.php">Cars</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Piece</a>
+      <a class="nav-link" href="piece.php">Piece</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#contact">About us</a>
